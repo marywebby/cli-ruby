@@ -1,5 +1,4 @@
 require 'minitest/autorun'
-# removed the require './app' 
 require './new_idea' 
 require './projects' 
 
@@ -14,7 +13,7 @@ class TestProjects < Minitest::Test
   
   def test_projects
     projects = Projects.new 
-    
+
     assert_match "New project successfully added!", projects.add_new_idea("Cardigan","5mm", "Purple"), "New idea method failed"
   end 
 end
